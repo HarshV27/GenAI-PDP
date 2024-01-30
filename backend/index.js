@@ -1,8 +1,12 @@
-const app = require('./app');
-const connectWithDb = require('./config/db');
-require('dotenv').config();
+import app from './app.js'
+import connectWithDb from './config/db.js';
+import dotenv from "dotenv"
+dotenv.config({
+  path: './.env'
+})
 
-const cloudinary = require('cloudinary')
+
+import cloudinary from 'cloudinary';
 
 // connect with db
 connectWithDb();

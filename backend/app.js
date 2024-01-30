@@ -1,5 +1,8 @@
-const express = require('express');
-require('dotenv').config();
+import express from 'express';
+import dotenv from "dotenv"
+dotenv.config({
+  path: './.env'
+})
 const app = express();
 
 //regular middleware
@@ -18,4 +21,4 @@ app.use('/api/v1/health-check',(req,res)=>{
 // app.use('/api/v1', homeRoute);
 
 
-module.exports = app;
+export default app
