@@ -12,38 +12,41 @@ const medicineSchema = new mongoose.Schema({
     required: [true, "Please provide the price of medicine"],
     maxlength: [5, "Medicine price should be less than 5 digits"],
   },
-  images: [
-    {
-      id: {
-        type: String,
-        required: true,
-      },
-      secure_url: {
-        type: String,
-        required: true,
-      },
-    },
-  ],
-
   companyName: {
     type: String,
     required: [true, "Please add company name for medicine"],
   },
-  medicineInfo: [
-    {
-      language: {
-        type: String,
-        required: true,
-      },
-      info: [{ question: { type: String }, answer: { type: String } }],
-    },
-  ],
-  expiryDate: {
-    type: Date,
-    default: Date.now,
-  },
+
+
+//   images: [
+//     {
+//       id: {
+//         type: String,
+//         required: true,
+//       },
+//       secure_url: {
+//         type: String,
+//         required: true,
+//       },
+//     },
+//   ],
+
+  
+//   medicineInfo: [
+//     {
+//       language: {
+//         type: String,
+//         required: true,
+//       },
+//       info: [{ question: { type: String }, answer: { type: String } }],
+//     },
+//   ],
+//   expiryDate: {
+//     type: Date,
+//     required:true
+//   },
 });
-module.exports = mongoose.model("Product", medicineSchema);
+export const Medicine = mongoose.model("MedicineSchema", medicineSchema)
 
 /*
 {
