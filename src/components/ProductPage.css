@@ -1,0 +1,211 @@
+.div {
+    background-color: #d9d9d9;
+    display: flex;
+    max-width: 381px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+  .div-2 {
+    background-color: #fff;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    padding: 3% 3% 3% 4%;
+  }
+  .img {
+    aspect-ratio: 1.49;
+    object-fit: contain;
+    object-position: center;
+    width: 21px;
+    stroke-width: 2px;
+    stroke: rgba(91, 94, 102, 0.95);
+    margin: auto 0;
+  }
+  .div-3 {
+    border-radius: 11px;
+    background-color: rgba(244, 246, 251, 0.96);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 12px 18px;
+  }
+  .div-4 {
+    color: #aca9a9;
+    margin: auto 0;
+    font: 400 13px Inter, sans-serif;
+  }
+  .img-2 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    fill: rgba(244, 246, 251, 0.96);
+  }
+  .img-3 {
+    aspect-ratio: 0.88;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    fill: rgba(91, 94, 102, 0.95);
+    align-self: start;
+    margin-top: 20px;
+  }
+  .div-5 {
+    background-color: #fefdfd;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0px;
+  }
+  .img-4 {
+    aspect-ratio: 2.04;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin: 14px 0;
+  }
+  .div-6 {
+    background-color: #fff;
+    display: flex;
+    min-height: 27px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .div-7 {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .div-8 {
+    align-self: center;
+    z-index: 10;
+    display: flex;
+    width: 44px;
+    gap: 4px;
+    padding: 0 20px;
+  }
+  .div-9 {
+    border-radius: 50%;
+    display: flex;
+    height: 8px;
+    flex-direction: column;
+  }
+  .div-10 {
+    border-radius: 50%;
+    display: flex;
+    height: 8px;
+    flex-direction: column;
+  }
+  .div-11 {
+    border-radius: 50%;
+    display: flex;
+    height: 8px;
+    flex-direction: column;
+  }
+  .div-12 {
+    border-radius: 50%;
+    display: flex;
+    height: 8px;
+    flex-direction: column;
+  }
+  .div-13 {
+    display: flex;
+    margin-top: 4px;
+    width: 100%;
+    flex-direction: column;
+    letter-spacing: 0.13px;
+  }
+  .div-14 {
+    color: #000;
+    letter-spacing: 0.2px;
+    font: 600 20px Inter, sans-serif;
+  }
+  .div-15 {
+    color: #888;
+    margin-top: 9px;
+    font: 600 12.5px Inter, sans-serif;
+  }
+  .div-16 {
+    display: flex;
+    margin-top: 26px;
+    width: 100%;
+    padding-right: 15px;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .div-17 {
+    display: flex;
+    gap: 0px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .img-5 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-18 {
+    color: #000;
+    letter-spacing: 0.18px;
+    align-self: start;
+    margin-top: 6px;
+    font: 17.5px Inter, sans-serif;
+  }
+  .img-6 {
+    aspect-ratio: 0.82;
+    object-fit: contain;
+    object-position: center;
+    width: 9px;
+    stroke-width: 2px;
+    stroke: #888d9a;
+    align-self: start;
+    margin-top: 7px;
+  }
+  .div-19 {
+    color: #888d9a;
+    letter-spacing: 0.12px;
+    font: 12px Inter, sans-serif;
+  }
+  .div-20 {
+    color: #0f8a24;
+    letter-spacing: 0.13px;
+    flex-grow: 1;
+    font: 13px Inter, sans-serif;
+  }
+  .div-21 {
+    color: #fff;
+    letter-spacing: 0.14px;
+    white-space: nowrap;
+    border-radius: 8px;
+    background-color: #148eea;
+    margin-top: 4px;
+    justify-content: center;
+    padding: 15px;
+    font: 700 14px Inter, sans-serif;
+  }
+  .div-22 {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 0 20px;
+  }
+  .div-23 {
+    color: #888;
+    font-family: Inter, sans-serif;
+    white-space: nowrap;
+  }
+  .div-24 {
+    color: #000;
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
