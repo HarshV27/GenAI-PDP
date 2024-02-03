@@ -18,34 +18,32 @@ const medicineSchema = new mongoose.Schema({
   },
 
 
-//   images: [
-//     {
-//       id: {
-//         type: String,
-//         required: true,
-//       },
-//       secure_url: {
-//         type: String,
-//         required: true,
-//       },
-//     },
-//   ],
+  images: [
+    {
+      type: String,
+        require: true
+    }
 
-  
-//   medicineInfo: [
-//     {
-//       language: {
-//         type: String,
-//         required: true,
-//       },
-//       info: [{ question: { type: String }, answer: { type: String } }],
-//     },
-//   ],
-//   expiryDate: {
-//     type: Date,
-//     required:true
-//   },
+  ],
+
+
+  medicineInfo: [
+    {
+      language: {
+        type: String,
+        required: true,
+      },
+      info: [{ question: { type: String }, answer: { type: String } }],
+    },
+  ],
+  expiryDate: {
+    type: String,
+    required: true
+  },
 });
+
+
+
 export const Medicine = mongoose.model("MedicineSchema", medicineSchema)
 
 /*
