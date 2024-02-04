@@ -1,13 +1,17 @@
 import { Medicine } from "../models/medicineModel.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { uploadOnCloudinary } from "../utils/cloudinary.js";
+import axios from 'axios';
+
 const addMedicine = asyncHandler(async (req, res) => {
-  const { medicineName, price, companyName,expiryDate,medicineInfo } = req.body;
+  let { medicineName, price, companyName,expiryDate,medicineInfo} = req.body;
+
+  const dataToSend = medicineInfo;
+  const pythonResponse = await axios.post('http://localhost:3000/process_info', dataToSend);
+  const result = pythonResponse.data;
+  medicineInfo = result
 
   const totalImages = req.files?.length;
-
-  console.log('totalImages', totalImages)
-  // console.log('reqfiles', req.files)
   const imagesUrl = [];
 
   for (let index = 0; index <totalImages; index++) {
@@ -25,6 +29,9 @@ const addMedicine = asyncHandler(async (req, res) => {
     medicineInfo,
     images : imagesUrl
   });
+
+  
+
   res.status(200).json({
     success:true,
     medicine

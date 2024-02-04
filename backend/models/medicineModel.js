@@ -45,37 +45,3 @@ const medicineSchema = new mongoose.Schema({
 
 
 export const Medicine = mongoose.model("MedicineSchema", medicineSchema)
-
-/*
-{
-medicineNames : [ { lang, name } ]
-images : [ {private_key,secure_url} ]
-companyName : String
-price : Integer
-discount : Integer
-medicineInfo : [ {lang,info : [  {question,answer} ]}   ]
-expiryDate : Date
-}
-
-MedicineID
-MedicineName
-Audio-of-Name
-Images- Array
-Company Name
-Price
-Discount
-MedicineInfo - Array of Info
-
-_______________________________
-Info
-    - id
-    - Question
-               - Stored in 8 Languages
-        - Eng/Hin Audio
-    - Answer 
-        - Stored in 8 Languages
-        - Eng/Hin Audio
-
-
-
-*/
